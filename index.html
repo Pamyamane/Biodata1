@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pramod Arun Mane - Biodata</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron:      #e8621a;
+    --saffron-light:#f5923e;
+    --saffron-dark: #b04810;
+    --gold:         #c9911a;
+    --gold-light:   #e8bb5a;
+    --gold-dark:    #8a6010;
+    --crimson:      #8b1a1a;
+    --crimson-light:#c0392b;
+    --cream:        #fff8f0;
+    --paper:        #fdf3e7;
+    --dark:         #1a0800;
+    --text:         #2a1200;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  @keyframes fadeInDown { from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeInUp   { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeInLeft { from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)} }
+  @keyframes shimmer    { 0%{background-position:-200% center}100%{background-position:200% center} }
+  @keyframes pulse      { 0%,100%{box-shadow:0 0 0 0 rgba(232,98,26,.45)}50%{box-shadow:0 0 0 14px rgba(232,98,26,0)} }
+  @keyframes rotateCW   { from{transform:rotate(0deg)}to{transform:rotate(360deg)} }
+  @keyframes rotateCCW  { from{transform:rotate(0deg)}to{transform:rotate(-360deg)} }
+  @keyframes shineSweep { 0%{left:-100%}60%{left:130%}100%{left:130%} }
+  @keyframes glowPulse  { 0%,100%{box-shadow:0 0 12px rgba(232,98,26,.5),0 0 30px rgba(201,145,26,.2)}50%{box-shadow:0 0 22px rgba(232,98,26,.85),0 0 50px rgba(201,145,26,.45)} }
+
+  body {
+    background: #1a0500;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body::before {
+    content:'';
+    position:fixed; inset:0;
+    background:
+      radial-gradient(ellipse at 15% 15%, rgba(232,98,26,.12) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 80%, rgba(139,26,26,.12) 0%, transparent 55%);
+    pointer-events:none;
+  }
+
+  .page {
+    width:100%; max-width:830px;
+    background:var(--cream);
+    position:relative;
+    overflow:hidden;
+    border-radius:6px;
+    box-shadow:
+      0 0 0 2px rgba(232,98,26,.5),
+      0 0 0 4px rgba(201,145,26,.25),
+      0 40px 100px rgba(0,0,0,.85);
+    animation:fadeInUp .8s cubic-bezier(.16,1,.3,1) both;
+  }
+
+  /* Corner ornaments */
+  .corner{position:absolute;width:85px;height:85px;z-index:15;pointer-events:none;}
+  .corner svg{width:100%;height:100%;}
+  .corner-tl{top:0;left:0;}
+  .corner-tr{top:0;right:0;transform:scaleX(-1);}
+  .corner-bl{bottom:0;left:0;transform:scaleY(-1);}
+  .corner-br{bottom:0;right:0;transform:scale(-1);}
+
+  /* Top saffron strip */
+  .top-strip{
+    height:7px;
+    background:linear-gradient(90deg,var(--crimson),var(--saffron),var(--gold-light),var(--saffron),var(--crimson));
+  }
+  .top-strip::after{content:'';display:block;height:2px;background:linear-gradient(90deg,transparent,rgba(232,98,26,.35),transparent);}
+
+  /* HEADER */
+  .header {
+    background:linear-gradient(160deg,#1a0500 0%,#2d0c00 35%,#3d1500 60%,#1a0500 100%);
+    padding:32px 50px 28px;
+    text-align:center;
+    position:relative;
+    border-bottom:3px solid var(--gold);
+    animation:fadeInDown .6s ease both;
+    overflow:hidden;
+  }
+  .header::before {
+    content:'';position:absolute;inset:0;
+    background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e8621a' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+    opacity:.6;
+  }
+  .header-ring{position:absolute;border-radius:50%;pointer-events:none;}
+  .hr1{width:320px;height:320px;top:50%;left:50%;margin:-160px 0 0 -160px;border:1px solid rgba(232,98,26,.1);animation:rotateCW 25s linear infinite;}
+  .hr2{width:220px;height:220px;top:50%;left:50%;margin:-110px 0 0 -110px;border:1px solid rgba(201,145,26,.08);animation:rotateCCW 18s linear infinite;}
+
+  .ganesh-symbol{font-size:30px;display:block;margin-bottom:6px;filter:drop-shadow(0 0 12px rgba(232,98,26,.7));animation:pulse 3s ease infinite;position:relative;z-index:2;}
+  .header-top-text{color:var(--saffron-light);font-size:12px;font-weight:400;letter-spacing:3px;margin-bottom:14px;opacity:.85;position:relative;z-index:2;}
+  .main-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:900;letter-spacing:2px;line-height:1.1;position:relative;z-index:2;}
+  .main-title span{
+    background:linear-gradient(90deg,var(--gold-dark),var(--saffron-light),var(--gold-light),var(--saffron-light),var(--gold-dark));
+    background-size:200% auto;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    animation:shimmer 3s linear infinite;
+  }
+  .name-sub{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--saffron-light);letter-spacing:4px;margin-top:6px;font-weight:300;opacity:.7;position:relative;z-index:2;}
+
+  .gold-divider{display:flex;align-items:center;gap:10px;margin:14px auto;max-width:280px;position:relative;z-index:2;}
+  .gold-divider .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--saffron),transparent);}
+  .gold-divider .diamond{width:7px;height:7px;background:var(--saffron);transform:rotate(45deg);}
+
+  .profession-badge{
+    display:inline-flex;align-items:center;gap:10px;
+    background:rgba(232,98,26,.15);
+    border:1px solid rgba(232,98,26,.45);
+    border-radius:50px;padding:8px 24px;margin-top:10px;
+    position:relative;z-index:2;
+  }
+  .profession-badge .dot{width:6px;height:6px;background:var(--saffron-light);border-radius:50%;animation:pulse 2s ease infinite;}
+  .profession-badge span{color:var(--saffron-light);font-size:13px;letter-spacing:2px;font-family:'Cormorant Garamond',serif;font-weight:600;}
+
+  /* ══ 96 KULI MARATHA BANNER ══ */
+  .maratha-banner {
+    background:linear-gradient(135deg,#5a0808 0%,#8b1a1a 40%,#6b0d0d 70%,#5a0808 100%);
+    padding:16px 50px;
+    display:flex;align-items:center;justify-content:center;gap:20px;
+    border-top:2px solid var(--saffron);
+    border-bottom:2px solid var(--gold);
+    position:relative;overflow:hidden;
+  }
+  .maratha-banner::before{
+    content:'';position:absolute;inset:0;
+    background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0L24 16H40L28 24L32 40L20 32L8 40L12 24L0 16H16Z' fill='%23e8621a' fill-opacity='0.07'/%3E%3C/svg%3E");
+  }
+  .maratha-banner::after{
+    content:'';position:absolute;
+    top:0;left:-100%;width:55%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(232,98,26,.12),transparent);
+    animation:shineSweep 3.5s ease-in-out infinite;
+  }
+  .sword-icon{font-size:24px;position:relative;z-index:2;filter:drop-shadow(0 0 8px rgba(232,98,26,.7));}
+  .maratha-text{text-align:center;position:relative;z-index:2;}
+  .maratha-text .top-label{font-size:9px;color:rgba(232,98,26,.8);letter-spacing:3px;text-transform:uppercase;font-family:'Cormorant Garamond',serif;font-weight:700;margin-bottom:3px;}
+  .maratha-text .main-label{
+    font-family:'Playfair Display',serif;font-size:24px;font-weight:900;letter-spacing:3px;
+    background:linear-gradient(90deg,var(--gold-dark),var(--gold-light),var(--saffron-light),var(--gold-light),var(--gold-dark));
+    background-size:200% auto;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    animation:shimmer 2.5s linear infinite;
+  }
+  .maratha-text .sub-label{font-size:10px;color:rgba(232,185,90,.65);letter-spacing:2px;font-family:'Cormorant Garamond',serif;margin-top:3px;}
+  /* Glow ring around banner text */
+  .maratha-glow{
+    position:absolute;
+    width:220px;height:70px;
+    border-radius:50%;
+    border:1px solid rgba(232,98,26,.25);
+    top:50%;left:50%;transform:translate(-50%,-50%);
+    animation:glowPulse 3s ease infinite;
+    pointer-events:none;z-index:1;
+  }
+
+  /* PHOTO + STATS */
+  .photo-info-row{
+    display:flex;gap:30px;padding:35px 50px 25px;
+    align-items:flex-start;
+    background:var(--paper);
+    animation:fadeInLeft .8s ease .2s both;
+  }
+  .photo-wrap{flex-shrink:0;}
+  .photo-frame{width:158px;height:158px;border-radius:50%;position:relative;animation:pulse 4s ease infinite;}
+  .photo-frame::before{
+    content:'';position:absolute;inset:-5px;border-radius:50%;
+    background:conic-gradient(var(--saffron-dark),var(--saffron-light),var(--gold-light),var(--saffron),var(--crimson),var(--saffron),var(--gold-light),var(--saffron-dark));
+    animation:rotateCW 6s linear infinite;z-index:0;
+  }
+  .photo-frame::after{content:'';position:absolute;inset:-2px;border-radius:50%;background:var(--paper);z-index:1;}
+  .photo-frame img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 12%;position:relative;z-index:2;display:block;filter:contrast(1.06) brightness(1.04);}
+
+  .quick-stats{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:11px;padding-top:5px;}
+
+  .stat-card{
+    background:#fff7ef;
+    border:1px solid rgba(232,98,26,.18);
+    border-radius:10px;padding:13px 17px;
+    position:relative;overflow:hidden;
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .stat-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(232,98,26,.15);}
+  .stat-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--saffron),var(--crimson));}
+  .stat-label{font-size:9px;color:var(--saffron-dark);text-transform:uppercase;letter-spacing:1.5px;font-family:'Cormorant Garamond',serif;font-weight:700;margin-bottom:4px;}
+  .stat-value{font-size:13.5px;color:var(--dark);font-weight:700;line-height:1.3;}
+
+  /* Highlighted jaat card */
+  .stat-card.jaat-card{
+    background:linear-gradient(135deg,#fff0e0,#ffe0c0);
+    border:2px solid rgba(139,26,26,.5);
+    box-shadow:0 0 0 1px rgba(232,98,26,.2),0 4px 15px rgba(139,26,26,.15);
+  }
+  .stat-card.jaat-card::before{background:linear-gradient(180deg,var(--crimson),var(--saffron));width:4px;}
+  .stat-card.jaat-card .stat-label{color:var(--crimson);font-size:10px;}
+  .stat-card.jaat-card .stat-value{color:var(--crimson);font-size:14px;}
+
+  /* CONTENT */
+  .content{padding:0 50px 40px;background:var(--cream);}
+  .section{margin-bottom:28px;animation:fadeInUp .6s ease both;}
+
+  .section-header{display:flex;align-items:center;gap:13px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(232,98,26,.2);}
+  .section-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--crimson),var(--saffron-dark));border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:16px;flex-shrink:0;box-shadow:0 4px 12px rgba(139,26,26,.4);}
+  .section-title-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:17px;color:var(--crimson);font-weight:700;}
+
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 25px;}
+  .info-grid-full{grid-column:1/-1;}
+
+  .info-row{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;border-radius:9px;background:#fff7ef;border:1px solid rgba(232,98,26,.1);transition:all .2s ease;}
+  .info-row:hover{background:#fff0e0;border-color:rgba(232,98,26,.3);transform:translateX(3px);box-shadow:0 3px 12px rgba(232,98,26,.08);}
+  .info-dot{width:6px;height:6px;background:var(--saffron);border-radius:50%;margin-top:6px;flex-shrink:0;}
+  .info-content{flex:1;}
+  .info-label{font-size:9.5px;color:var(--saffron-dark);text-transform:uppercase;letter-spacing:1px;font-family:'Cormorant Garamond',serif;font-weight:700;margin-bottom:2px;}
+  .info-value{font-size:13.5px;color:var(--dark);font-weight:500;line-height:1.4;}
+
+  /* Horoscope */
+  .horoscope-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .horo-card{text-align:center;padding:13px 8px;background:linear-gradient(135deg,#fff4e8,#ffe8cc);border:1px solid rgba(232,98,26,.2);border-radius:10px;transition:all .2s ease;}
+  .horo-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(232,98,26,.15);border-color:var(--saffron);}
+  .horo-label{font-size:9px;color:var(--saffron-dark);text-transform:uppercase;letter-spacing:1px;font-family:'Cormorant Garamond',serif;font-weight:700;margin-bottom:5px;}
+  .horo-value{font-size:15px;font-weight:700;color:var(--crimson);}
+
+  /* Relations */
+  .relations-wrap{display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;background:#fff7ef;border:1px solid rgba(232,98,26,.15);border-radius:9px;}
+  .relation-tag{padding:4px 13px;background:linear-gradient(135deg,rgba(232,98,26,.08),rgba(232,98,26,.14));border:1px solid rgba(232,98,26,.3);border-radius:20px;font-size:12px;color:var(--crimson);font-weight:500;transition:all .2s ease;}
+  .relation-tag:hover{background:rgba(232,98,26,.18);border-color:var(--saffron);transform:translateY(-2px);}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+  .contact-card{display:flex;align-items:center;gap:15px;padding:18px 20px;background:linear-gradient(135deg,#1a0500,#2d0a00);border-radius:12px;border:1px solid rgba(232,98,26,.35);transition:all .2s ease;}
+  .contact-card:hover{border-color:var(--saffron);box-shadow:0 8px 25px rgba(0,0,0,.4),0 0 15px rgba(232,98,26,.1);transform:translateY(-2px);}
+  .contact-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--crimson),var(--saffron-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 4px 12px rgba(139,26,26,.5);}
+  .contact-label{font-size:9.5px;color:rgba(232,98,26,.7);text-transform:uppercase;letter-spacing:1.5px;font-family:'Cormorant Garamond',serif;font-weight:700;margin-bottom:3px;}
+  .contact-value{font-size:15px;color:var(--cream);font-weight:600;}
+
+  /* Footer */
+  .footer{background:linear-gradient(135deg,#1a0500,#2d0a00);padding:22px 50px 24px;text-align:center;border-top:3px solid var(--saffron);position:relative;}
+  .footer::before{content:'';position:absolute;top:-1px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--saffron-light),transparent);}
+  .footer-name{color:var(--gold-light);font-size:18px;font-family:'Playfair Display',serif;font-weight:700;margin:6px 0 4px;letter-spacing:1px;}
+  .footer-text{color:rgba(232,98,26,.55);font-size:11px;letter-spacing:2.5px;font-family:'Cormorant Garamond',serif;text-transform:uppercase;}
+
+  .bottom-strip{height:7px;background:linear-gradient(90deg,var(--crimson),var(--saffron),var(--gold-light),var(--saffron),var(--crimson));}
+
+  @media print{body{background:white;padding:0;}.page{box-shadow:none;}}
+  @media (max-width:600px){
+    .photo-info-row{flex-direction:column;align-items:center;padding:25px;}
+    .content{padding:0 25px 30px;}
+    .info-grid,.contact-grid{grid-template-columns:1fr;}
+    .horoscope-grid{grid-template-columns:1fr 1fr;}
+    .header,.maratha-banner{padding-left:25px;padding-right:25px;}
+    .main-title{font-size:32px;}
+    .maratha-text .main-label{font-size:18px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Top strip -->
+  <div class="top-strip"></div>
+
+  <!-- Corner ornaments -->
+  <div class="corner corner-tl">
+    <svg viewBox="0 0 85 85" fill="none"><path d="M0 0L85 0L85 5L5 5L5 85L0 85Z" fill="#e8621a" opacity=".55"/><path d="M0 0L42 0L42 3L3 3L3 42L0 42Z" fill="#e8621a"/><circle cx="42" cy="42" r="9" fill="none" stroke="#c9911a" stroke-width="1.5" opacity=".35"/><path d="M20 0L20 20L0 20" fill="none" stroke="#e8621a" stroke-width="1" opacity=".35"/></svg>
+  </div>
+  <div class="corner corner-tr">
+    <svg viewBox="0 0 85 85" fill="none"><path d="M0 0L85 0L85 85L80 85L80 5L0 5Z" fill="#e8621a" opacity=".55"/><path d="M43 0L85 0L85 42L82 42L82 3L43 3Z" fill="#e8621a"/><circle cx="43" cy="42" r="9" fill="none" stroke="#c9911a" stroke-width="1.5" opacity=".35"/></svg>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-ring hr1"></div>
+    <div class="header-ring hr2"></div>
+    <span class="ganesh-symbol">🕉</span>
+    <div class="header-top-text">॥ श्री गणेशाय नमः ॥</div>
+    <div class="main-title"><span>Pramod Mane</span></div>
+    <div class="name-sub">प्रमोद अरुण माने</div>
+    <div class="gold-divider">
+      <div class="line"></div><div class="diamond"></div><div class="diamond"></div><div class="diamond"></div><div class="line"></div>
+    </div>
+    <div class="main-title" style="font-size:26px;margin-bottom:8px"><span>परिचय पत्र</span></div>
+    <div class="profession-badge">
+      <div class="dot"></div>
+      <span>Software Developer &nbsp;·&nbsp; MCA &nbsp;·&nbsp; 6 LPA</span>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!-- ══ 96 KULI MARATHA BANNER ══ -->
+  <div class="maratha-banner">
+    <div class="maratha-glow"></div>
+    <span class="sword-icon">⚔️</span>
+    <div class="maratha-text">
+      <div class="top-label">धर्म &amp; जात · Religion &amp; Caste</div>
+      <div class="main-label">हिंदू &nbsp;|&nbsp; मराठा ९६ कुळी</div>
+      <div class="sub-label">Hindu &nbsp;·&nbsp; 96 Kuli Maratha</div>
+    </div>
+    <span class="sword-icon">⚔️</span>
+  </div>
+
+  <!-- PHOTO + STATS -->
+  <div class="photo-info-row">
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <img src="/mnt/user-data/uploads/Gemini_Generated_Image_mnzh1fmnzh1fmnzh.png" alt="Pramod Arun Mane">
+      </div>
+    </div>
+    <div class="quick-stats">
+      <div class="stat-card"><div class="stat-label">जन्म तारीख</div><div class="stat-value">06 जून 1999</div></div>
+      <div class="stat-card"><div class="stat-label">उंची</div><div class="stat-value">5.8 फूट</div></div>
+      <div class="stat-card"><div class="stat-label">रक्तगट</div><div class="stat-value">B+</div></div>
+      <div class="stat-card jaat-card"><div class="stat-label">⚡ धर्म / जात</div><div class="stat-value">हिंदू · मराठा (96 कुळी)</div></div>
+      <div class="stat-card"><div class="stat-label">शिक्षण</div><div class="stat-value">MCA</div></div>
+      <div class="stat-card"><div class="stat-label">वार्षिक उत्पन्न</div><div class="stat-value">6 LPA</div></div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- वैयक्तिक -->
+    <div class="section" style="animation-delay:.1s">
+      <div class="section-header"><div class="section-icon">👤</div><div class="section-title-mr">वैयक्तिक माहिती</div></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">पूर्ण नाव</div><div class="info-value">प्रमोद अरुण माने</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">जन्मस्थळ</div><div class="info-value">कावळेवाडी, धाराशिव, महाराष्ट्र</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">नोकरी / व्यवसाय</div><div class="info-value">Software Developer</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">कंपनी</div><div class="info-value">CORE EHS (Env., Health &amp; Safety)</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">उच्च शिक्षण</div><div class="info-value">MCA (Master of Computer Application)</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">पगार</div><div class="info-value">6 LPA</div></div></div>
+      </div>
+    </div>
+
+    <!-- कुंडली -->
+    <div class="section" style="animation-delay:.2s">
+      <div class="section-header"><div class="section-icon">⭐</div><div class="section-title-mr">जन्मकुंडली माहिती</div></div>
+      <div class="horoscope-grid">
+        <div class="horo-card"><div class="horo-label">राशी</div><div class="horo-value">कुंभ</div></div>
+        <div class="horo-card"><div class="horo-label">नक्षत्र</div><div class="horo-value">धनिष्ठा</div></div>
+        <div class="horo-card"><div class="horo-label">गण</div><div class="horo-value">राक्षस</div></div>
+        <div class="horo-card"><div class="horo-label">वर्ण</div><div class="horo-value">शूद्र</div></div>
+      </div>
+    </div>
+
+    <!-- कौटुंबिक -->
+    <div class="section" style="animation-delay:.3s">
+      <div class="section-header"><div class="section-icon">🏠</div><div class="section-title-mr">कौटुंबिक माहिती</div></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">वडिलांचे नाव</div><div class="info-value">अरुण विठ्ठल माने</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">वडिलांचा व्यवसाय</div><div class="info-value">शेती</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">आईचे नाव</div><div class="info-value">अंजना अरुण माने</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">आईचा व्यवसाय</div><div class="info-value">गृहिणी</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">चुलते</div><div class="info-value">कृष्णा विठ्ठल माने</div></div></div>
+        <div class="info-row"><div class="info-dot"></div><div class="info-content"><div class="info-label">बहिण</div><div class="info-value">माधुरी किशोर बारकुल</div></div></div>
+        <div class="info-row info-grid-full"><div class="info-dot"></div><div class="info-content"><div class="info-label">मामा</div><div class="info-value">धोंडीराम नामदेव आतकरे (गाव – थोरसवाडी, धाराशिव)</div></div></div>
+        <div class="info-grid-full">
+          <div style="padding:0 0 8px;font-size:9.5px;color:var(--saffron-dark);text-transform:uppercase;letter-spacing:1px;font-family:'Cormorant Garamond',serif;font-weight:700;">नातेसंबंध</div>
+          <div class="relations-wrap">
+            <span class="relation-tag">खोत</span><span class="relation-tag">लोमटे</span><span class="relation-tag">आतकरे</span><span class="relation-tag">बारकुल</span><span class="relation-tag">गडकर</span><span class="relation-tag">कावळे</span><span class="relation-tag">सावंत</span><span class="relation-tag">सुरवसे</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- संपर्क -->
+    <div class="section" style="animation-delay:.4s">
+      <div class="section-header"><div class="section-icon">📞</div><div class="section-title-mr">संपर्क</div></div>
+      <div class="contact-grid">
+        <div class="contact-card"><div class="contact-icon">📱</div><div><div class="contact-label">मोबाईल नंबर</div><div class="contact-value">8329980098</div></div></div>
+        <div class="contact-card"><div class="contact-icon">📍</div><div><div class="contact-label">पत्ता</div><div class="contact-value">कावळेवाडी, धाराशिव, महाराष्ट्र</div></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="gold-divider" style="margin:0 auto 12px">
+      <div class="line"></div><div class="diamond"></div><div class="diamond"></div><div class="diamond"></div><div class="line"></div>
+    </div>
+    <div style="font-size:22px;margin-bottom:4px">🕉</div>
+    <div class="footer-name">प्रमोद अरुण माने</div>
+    <div class="footer-text">Software Developer &nbsp;·&nbsp; CORE EHS &nbsp;·&nbsp; Dharashiv, Maharashtra</div>
+  </div>
+
+  <!-- Bottom strip -->
+  <div class="bottom-strip"></div>
+
+  <!-- Corner ornaments bottom -->
+  <div class="corner corner-bl">
+    <svg viewBox="0 0 85 85" fill="none"><path d="M0 0L85 0L85 5L5 5L5 85L0 85Z" fill="#e8621a" opacity=".55"/><path d="M0 0L42 0L42 3L3 3L3 42L0 42Z" fill="#e8621a"/></svg>
+  </div>
+  <div class="corner corner-br">
+    <svg viewBox="0 0 85 85" fill="none"><path d="M0 0L85 0L85 85L80 85L80 5L0 5Z" fill="#e8621a" opacity=".55"/><path d="M43 0L85 0L85 42L82 42L82 3L43 3Z" fill="#e8621a"/></svg>
+  </div>
+
+</div>
+</body>
+</html>
